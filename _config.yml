@@ -1,0 +1,9 @@
+name: APAX Software
+permalink: pretty
+relative_permalinks: false
+sass:
+  sass_dir: _scss
+  # style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
