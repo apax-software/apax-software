@@ -308,6 +308,16 @@ h3 {
 	}
 }
 
+.top-container {
+	h1 {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
 /************************************* Boxes *****************************************/
 
 .box {
@@ -643,10 +653,6 @@ html.loading body {
 	background: url("/assets/img/backgrounds/portfolio-min.jpg") no-repeat fixed 100% 100%;
 	background-size: cover;
 	height: 100vh;
-	/*.top-container {
-		background: url("/assets/img/backgrounds/services-top-min.jpg") no-repeat;
-		
-	}*/
 }
 
 .PortfolioDetail-wrap {
@@ -668,8 +674,6 @@ html.loading body {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
-			margin-top: 3vh;
-			/*margin-top: 0vh;*/
 		}
 	}
 	.bot-container {
@@ -727,8 +731,6 @@ html.loading body {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
-			margin-top: 3vh;
-			/*margin-top: 0vh;*/
 		}
 	}
 	.bot-container {
@@ -772,8 +774,6 @@ html.loading body {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
-			margin-top: 3vh;
-			/*margin-top: 0vh;*/
 		}
 	}
 	.bot-container {
