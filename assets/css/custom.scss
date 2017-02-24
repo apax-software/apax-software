@@ -332,7 +332,7 @@ h3 {
 
 .custom-carousel {
 	/*height: 500px;*/
-	width: 80%;
+	width: 70%;
 	/*overflow: hidden;*/
 	margin: 0 auto;
 	.slider-size {
@@ -754,13 +754,14 @@ html.loading body {
 	.top-container {
 		background: url("/assets/img/backgrounds/portfolio-detail-min-top.jpg") no-repeat;
 		background-size: cover;
-		height: 80vh;
+		background-position-y: -25vh;
+		height: 70vh;
 	}
 	.bot-container {
 		background: url("/assets/img/backgrounds/portfolio-detail-min-bot.jpg") no-repeat;
 		background-size: cover;
-		height: 30vh;
-		padding-top: 3vh;
+		height: 24vh;
+		/*padding-top: 3vh;*/
 		/*background-position: 0 80%;*/
 		.col-md-6 {
 			display: table-cell;
