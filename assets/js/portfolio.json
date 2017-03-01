@@ -1,64 +1,28 @@
 {
-	"company": "Mobile Serve",
-	"shortname": "mobile-serve",
-	"images": [
-		"1",
-		"2",
-		"3",
-		"4"
-	]
+	"mobile_serve" : {
+	"title" : "Mobile Serve",
+	"images": 4
+	},
+	"pc_usa" : {
+	"title": "PC USA",
+	"images": 4
+	},
+	"keeneland" : {
+	"title": "Keeneland",
+	"images": 4
+	},
+	"bullard" : {
+	"title": "Bullard",
+	"images": 4
+	},
+	"lfucg" : {
+	"title": "LFUCG",
+	"images": 4
+	},
+	"uk" : {
+	"title": "University of Kentucky",
+	"images": 4
+	}
 }
-//,
-// {
-// 	"company": "PC USA",
-// 	"shortname": "pc-usa",
-// 	"images": [
-// 		"1",
-// 		"2",
-// 		"3",
-// 		"4"
-// 	]
-// },
-// {
-// 	"company": "University of Kentucky",
-// 	"shortname": "university-of-kentucky",
-// 	"images": [
-// 		"1",
-// 		"2",
-// 		"3",
-// 		"4"
-// 	]
-// },
-// {
-// 	"company": "Keeneland",
-// 	"shortname": "keeneland",
-// 	"images": [
-// 		"1",
-// 		"2",
-// 		"3",
-// 		"4"
-// 	]
-// },
-// {
-// 	"company": "Bullard",
-// 	"shortname": "bullard",
-// 	"images": [
-// 		"1",
-// 		"2",
-// 		"3",
-// 		"4"
-// 	]
-// },
-// {
-// 	"company": "LFUCG",
-// 	"shortname": "lfucg",
-// 	"images": [
-// 		"1",
-// 		"2",
-// 		"3",
-// 		"4"
-// 	]
-// }
-
 
 

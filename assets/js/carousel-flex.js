@@ -1,31 +1,25 @@
 
 $(document).ready(function () {
-	var companies = {
-		mobile_serve: [
-			"Mobile Serve",
-			4
-		],
-		pc_usa: [
-			"PC USA",
-			3
-		]
-	};
-	$('.box-small').on('click',function(){
+	
 
-		var company = ($(this).attr("id"));
-		var shortname = companies[company][0];
-		var images = companies[company][1];
+	$('.box-small').on('click',function(e){
 
-		$('#company-header').hide().text(shortname).fadeIn(900);
+		// $('.hide').removeClass('hide').fadeOut(200);
+		// ($(this).addClass('hide')).fadeIn(900);
 
-		$( '.item' ).each(function(index, element) {
-			var newSrc = '/assets/img/carousel/' + company + index + '.jpg';
-			$(element).find('img').fadeOut(200, function() {
-				$(element).find('img').attr('src', newSrc);
-			}).fadeIn(500);
-			// $(element).find("img").attr('src', newSrc);
+		var shortname_string = ($(this).attr('id'));
+		$.getJSON("../assets/js/portfolio.json", function(json) {
+			
+			var company = json[shortname_string];
+
+			$( '.item' ).each(function(index, element) {
+				var newSrc = '/assets/img/carousel/' + shortname_string + index + '.jpg';
+				$(element).find('img').fadeOut(200, function() {
+					$(element).find('img').attr('src', newSrc);
+				}).fadeIn(500);
+			});
+
+			$('#company-header').hide().text(company.title).fadeIn(900);
 		});
-
 	});
-
 });

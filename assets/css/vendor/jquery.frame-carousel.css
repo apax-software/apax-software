@@ -175,7 +175,7 @@
   background: white;
 }
 .fc.fc-collapsed {
-  background-image: none !important;
+  // background-image: none !important; remove this because we want frames
   margin: 0 !important;
 }
 .fc.fc-collapsed .fc-pagination {

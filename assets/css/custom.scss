@@ -168,15 +168,30 @@ $break-large: 1200px;*/
 
 /********************************** Font *********************************************/
 
-@function calcSize($scale) {
+@function calcSizeLarge($scale) {
 	$fontSize: 12px;
 	@return $fontSize * $scale; 
 }
+@function calcSizeSmall($scale) {
+	$fontSize: 9px;
+	@return $fontSize * $scale; 
+}
 @mixin font-size($scale) {
-	font-size: calcSize($scale);
+	@include mobile {
+		font-size: calcSizeSmall($scale);
+	}
+	@include desktop {
+		font-size: calcSizeLarge($scale);
+	}
 }
 @mixin line-height($scale) {
-	line-height: calcSize($scale);
+	@include mobile {
+		line-height: calcSizeSmall($scale);
+	}
+	@include desktop {
+		line-height: calcSizeLarge($scale);
+	}
+	
 }
 
 /*@function calcRem($size) {
@@ -252,6 +267,10 @@ $small-mobile-width: 640px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+.mobile-hide {
+	display: none;
 }
 
 hr {
@@ -444,11 +463,16 @@ h3 {
 			display: none;
 		}
 	}
+	@include mobile {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .box-small {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	background-color: white;
 	margin: 25px 0 0 0;
 	&.horizontal {
@@ -463,6 +487,9 @@ h3 {
 	img {
 		margin-left: 10%;
 		width: 80%;
+	}
+	&.hide {
+		display: none;
 	}
 }
 
@@ -515,11 +542,9 @@ h3 {
     	}
     	@include mobile {
     		padding-left: 0;
-    		font-size: 34px;
+    		font-size: 38px;
+    		letter-spacing: 20px;
     	}
-    	@include small-mobile {
-			font-size: 28px;
-		}
     }
     h2 {
     	color: white;
@@ -530,6 +555,9 @@ h3 {
     	margin-top: 80px;
     	a:hover {
     		color: white;
+    	}
+    	@include mobile {
+    		font-size: 24px;
     	}
 	}
     h1, h2, a {
@@ -693,6 +721,9 @@ html.loading body {
 	.carousel-frame {
 		.fc {
 			margin: 0 60px;
+			@include mobile {
+				margin: 0 30px;
+			}
 		}
 	}
 
@@ -747,7 +778,7 @@ html.loading body {
 .Portfolio-wrap {
 	background: url("/assets/img/backgrounds/portfolio-min.jpg") no-repeat fixed 100% 100%;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .PortfolioDetail-wrap {
@@ -755,12 +786,12 @@ html.loading body {
 		background: url("/assets/img/backgrounds/portfolio-detail-min-top.jpg") no-repeat;
 		background-size: cover;
 		background-position-y: -25vh;
-		height: 70vh;
+		min-height: 70vh;
 	}
 	.bot-container {
 		background: url("/assets/img/backgrounds/portfolio-detail-min-bot.jpg") no-repeat;
 		background-size: cover;
-		height: 24vh;
+		min-height: 24vh;
 		/*padding-top: 3vh;*/
 		/*background-position: 0 80%;*/
 		.col-md-6 {
@@ -847,7 +878,7 @@ html.loading body {
 	.bot-container {
 		background: url("/assets/img/backgrounds/mtn-bot-min.jpg") no-repeat;
 		background-size: cover;
-		height: 115vh;
+		min-height: 115vh;
 		padding-top: 3vh;
 		/*background-position: 0 80%;*/
 	}
@@ -860,9 +891,18 @@ html.loading body {
 		@include font-size(1.5);
 		@include line-height(1.75);
 		font-weight: 400;
+
+	}
+	ul {
+		@include mobile {
+			padding-left: 20px;
+		}
 	}
 	li {
 		@include line-height(3);
+		@include mobile {
+			@include line-height(2);
+		}
 	}
 	a {
 		color: $color_cardinal_approx;
@@ -1018,8 +1058,11 @@ body {
 .footer {
 	background: white;
 	padding-top: 30px;
-	.col-lg-4 {
+	.col-lg-3 {
 		background-color: white;
+		@include mobile {
+			display: none;
+		}
 	}
 	img {
 		width: 70%;
@@ -1039,6 +1082,9 @@ body {
 			text-transform: uppercase;
 			&:last-child {
 				/*width: 25%;*/
+			}
+			@include mobile {
+				letter-spacing: 0;
 			}
 		}
 		tr td {
@@ -1151,6 +1197,12 @@ body {
 
 .row {
 	margin: 25px 0;
+	@include mobile {
+		margin: 0;
+		&:last-child {
+			margin-bottom: 25px;
+		}
+	}
 }
 
 #features a:hover {
