@@ -180,17 +180,13 @@ $break-large: 1200px;*/
 	@include mobile {
 		font-size: calcSizeSmall($scale);
 	}
-	@include desktop {
-		font-size: calcSizeLarge($scale);
-	}
+	font-size: calcSizeLarge($scale);
 }
 @mixin line-height($scale) {
 	@include mobile {
 		line-height: calcSizeSmall($scale);
 	}
-	@include desktop {
-		line-height: calcSizeLarge($scale);
-	}
+	line-height: calcSizeLarge($scale);
 	
 }
 
@@ -205,37 +201,37 @@ $break-large: 1200px;*/
 
 /********************************** Device Mixins ************************************/
 
-$tablet-width: 751px;
-$desktop-width: 1000px;
-$xlarge-width: 1400px;
-$mobile-width: $tablet-width - 1;
-$small-mobile-width: 640px;
+$tablet_width: 751px;
+$desktop_width: 1000px;
+$xlarge_width: 1400px;
+$phablet_width: $tablet_width - 1;
+$mobile_width: 450px;
 
 @mixin tablet {
-	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+	@media (min-width: #{$tablet_width}) and (max-width: #{$desktop_width - 1px}) {
+		@content;
+	}
+}
+
+@mixin phablet {
+	@media (min-width: #{$mobile_width + 1}) and (max-width: #{$phablet_width}) {
 		@content;
 	}
 }
 
 @mixin mobile {
-	@media (max-width: #{$mobile-width}) {
-		@content;
-	}
-}
-
-@mixin small-mobile {
-	@media (max-width: #{$small-mobile-width}) {
+	@media (max-width: #{$mobile_width}) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media (min-width: #{$desktop-width}) {
+	@media (min-width: #{$desktop_width}) {
 		@content;
 	}
 }
 @mixin xlarge {
-	@media (min-width: #{$xlarge-width}){
+	@media (min-width: #{$xlarge_width}){
 		@content;
 	}
 }
@@ -421,7 +417,7 @@ h3 {
 	background-color: white;
 	height: 225px;
 	width: 225px;
-	margin: 25px 0;
+	margin: 15% auto;
 	&.horizontal {
 		display: flex;
 		justify-content: center;
@@ -447,11 +443,29 @@ h3 {
 			font-weight: 600;
 			letter-spacing: 2px;
 			@include font-size(1.25);
+
+			@include tablet {
+				font-size: 16px;
+			}
+
+			@include mobile {
+				@include font-size(1.75);
+			}
 		}
 		p {
 			text-align: justify;
 			@include font-size(1);
 			@include line-height(1.25);
+
+			@include mobile {
+				@include font-size(1.35);
+				@include line-height(1.6)
+			}
+
+			@include tablet {
+				font-size: 12px;
+				line-height: 14px;
+			}
 		}
 	}
 	&:hover {
@@ -464,8 +478,9 @@ h3 {
 		}
 	}
 	@include mobile {
+		margin: 15% auto;
 		&:last-child {
-			margin-bottom: 0;
+			/*margin-bottom: 0;*/
 		}
 	}
 }
@@ -930,7 +945,7 @@ html.loading body {
 	.bot-container {
 		background: url("/assets/img/backgrounds/mtn-bot-min.jpg") no-repeat;
 		background-size: cover;
-		height: 150vh;
+		min-height: 150vh;
 		padding-top: 8vh;
 		/*background-position: 0 80%;*/
 	}
@@ -973,6 +988,10 @@ html.loading body {
 		margin-bottom: 0;
 		@include font-size(1.3);
 		text-transform: uppercase;
+		
+		@include mobile {
+			@include font-size(1.1);
+		}
 	}
 	hr {
 		border-top: 2px solid #bbb;
@@ -990,6 +1009,7 @@ html.loading body {
 	@include mobile {
 		p.phone {
 			float: left;
+			margin-bottom: -13px;
 		}
 		p {
 			margin-bottom: 5px;
@@ -1004,6 +1024,22 @@ html.loading body {
 			margin-top: 10px;
 		}
 	}
+	@include tablet {
+		p.phone {
+			float: left;
+		}
+	}
+
+	@include phablet {
+		p {
+			@include font-size(0.9);
+		}
+		p.phone {
+			float: left;
+		}
+	}
+
+
 }
 
 //@extend-elements
