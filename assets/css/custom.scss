@@ -236,22 +236,6 @@ $mobile_width: 450px;
 	}
 }
 
-.navbar-default .navbar-nav {
-	li.active > a {
-		background-color: #e6e6e6;
-		color: $color_cardinal_approx;
-	}
-	a {
-		font-weight: 500;
-	}
-		> li > a {
-		@include tablet {
-			padding:15px 10px;	
-		}
-	}
-}
-
-
 /********************************** Consistencies ************************************/
 
 .center {
@@ -274,6 +258,33 @@ hr {
 		height: 100%;
 		width: 0;
 		border: 1px solid black;
+	}
+}
+
+.navbar-default .navbar-nav {
+	li.active > a {
+		background-color: #e6e6e6;
+		color: $color_cardinal_approx;
+	}
+	a {
+		font-weight: 500;
+	}
+		> li > a {
+		@include tablet {
+			padding:15px 10px;	
+		}
+	}
+	.dropdown-menu {
+		li {
+			padding: 5px 0;
+			a {
+				color: #777;
+				&:hover {
+					color: #333;
+					background-color: transparent;
+				}
+			}
+		}
 	}
 }
 
