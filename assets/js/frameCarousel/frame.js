@@ -21,19 +21,19 @@ $(document).ready(function () {
 			height: '64.8%'
 		},
 		images: [
-			'../assets/img/carousel/1.jpg',
-			'../assets/img/carousel/2.jpg',
-			'../assets/img/carousel/3.jpg',
-			'../assets/img/carousel/4.jpg',
-			'../assets/img/carousel/5.jpg',
-			'../assets/img/carousel/6.jpg',
-			'../assets/img/carousel/7.jpg',
+			'../assets/img/carousel/1m.jpg',
+			'../assets/img/carousel/2m.jpg',
+			'../assets/img/carousel/3m.jpg',
+			'../assets/img/carousel/4m.jpeg',
+			'../assets/img/carousel/5m.jpg',
+			'../assets/img/carousel/6m.jpg',
+			'../assets/img/carousel/7m.jpg',
 			'../assets/img/carousel/8.jpg',
 			'../assets/img/carousel/9.jpg',
 			'../assets/img/carousel/10.jpg'
 		],
 
-		autoplay: true,
+		autoplay: false,
 
 		autoplayInterval: 3500,
 
@@ -63,16 +63,16 @@ $(document).ready(function () {
 			height: '62%'
 		},
 		images: [
-			'../assets/img/carousel/1.jpg',
-			'../assets/img/carousel/2.jpg',
-			'../assets/img/carousel/3.jpg',
-			'../assets/img/carousel/4.jpg',
-			'../assets/img/carousel/5.jpg',
-			'../assets/img/carousel/6.jpg',
-			'../assets/img/carousel/7.jpg',
-			'../assets/img/carousel/8.jpg',
-			'../assets/img/carousel/9.jpg',
-			'../assets/img/carousel/10.jpg'
+			'../assets/img/carousel/1d.png',
+			'../assets/img/carousel/2d.png',
+			'../assets/img/carousel/3d.png',
+			'../assets/img/carousel/4d.png',
+			'../assets/img/carousel/5d.png',
+			'../assets/img/carousel/6d.png',
+			'../assets/img/carousel/7d.png',
+			'../assets/img/carousel/8d.png',
+			'../assets/img/carousel/9d.png',
+			'../assets/img/carousel/10d.png'
 		],
 
 		autoplay: true,

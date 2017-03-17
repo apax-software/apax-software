@@ -201,7 +201,7 @@ $break-large: 1200px;*/
 
 /********************************** Device Mixins ************************************/
 
-$tablet_width: 751px;
+$tablet_width: 771px;
 $desktop_width: 1000px;
 $xlarge_width: 1400px;
 $phablet_width: $tablet_width - 1;
@@ -747,6 +747,12 @@ html.loading body {
 	.carousel-frame {
 		.fc {
 			margin: 0 60px;
+			@include tablet {
+				margin: 0 0px;
+			}
+			@include phablet {
+				margin: 0 30%;
+			}
 			@include mobile {
 				margin: 0 30px;
 			}
@@ -782,8 +788,13 @@ html.loading body {
 		}
 	}
 }
+@include phablet {
+	.desktop-only {
+		display: none;
+	}
+}
 @include mobile {
-	#mobile-none {
+	.desktop-only {
 		display: none;
 	}
 }
@@ -1077,6 +1088,7 @@ html {
 }
 body {
 	margin-top: 50px;
+	overflow-x: hidden;
 	@extend %extend_1;
 }
 #wrap {
