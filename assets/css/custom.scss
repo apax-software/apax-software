@@ -161,6 +161,39 @@ $break-large: 1200px;*/
 	animation-duration: 1.6s;
 }
 
+.scale-hover {
+	a {
+		display: inline-block;
+		overflow: hidden;
+		padding: 0 8px;
+		height: 1em;
+		span {
+			position: relative;
+			display: inline-block;
+			-webkit-transition: -webkit-transform 0.3s;
+			-moz-transition: -moz-transform 0.3s;
+			transition: transform 0.3s;
+			padding: 0 10px;
+			&:before {
+				position: absolute;
+				top: 100%;
+				color: white;
+				content: attr(data-hover);
+				font-weight: 700;
+				-webkit-transform: translate3d(0,0,0);
+				-moz-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
+		}
+		&:hover span,
+		&:focus span {
+			-webkit-transform: translateY(-100%);
+			-moz-transform: translateY(-100%);
+			transform: translateY(-100%);		
+		}
+	}
+}
+
 /*@include animation(slide-right) {
 	margin-left: 24px; 
 }*/
