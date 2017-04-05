@@ -161,36 +161,34 @@ $break-large: 1200px;*/
 	animation-duration: 1.6s;
 }
 
-.scale-hover {
-	a {
+a.scale-hover{
+	display: inline-block;
+	overflow: hidden;
+	padding: 0 8px;
+	height: 1em;
+	span {
+		position: relative;
 		display: inline-block;
-		overflow: hidden;
-		padding: 0 8px;
-		height: 1em;
-		span {
-			position: relative;
-			display: inline-block;
-			-webkit-transition: -webkit-transform 0.3s;
-			-moz-transition: -moz-transform 0.3s;
-			transition: transform 0.3s;
-			padding: 0 10px;
-			&:before {
-				position: absolute;
-				top: 100%;
-				color: white;
-				content: attr(data-hover);
-				font-weight: 700;
-				-webkit-transform: translate3d(0,0,0);
-				-moz-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
+		-webkit-transition: -webkit-transform 0.3s;
+		-moz-transition: -moz-transform 0.3s;
+		transition: transform 0.3s;
+		padding: 0 10px;
+		&:before {
+			position: absolute;
+			top: 100%;
+			color: white;
+			content: attr(data-hover);
+			font-weight: 700;
+			-webkit-transform: translate3d(0,0,0);
+			-moz-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
 		}
-		&:hover span,
-		&:focus span {
-			-webkit-transform: translateY(-100%);
-			-moz-transform: translateY(-100%);
-			transform: translateY(-100%);		
-		}
+	}
+	&:hover span,
+	&:focus span {
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);		
 	}
 }
 
@@ -735,6 +733,24 @@ html.loading body {
 		/*background-position: 0 80%;*/
 		h3 {
 			margin-top: 0vh;
+			@include phablet {
+				padding: 5px 0;
+			}
+		}
+		@include tablet {
+			.row {
+				margin-top: 0;
+			}
+		}
+		@include phablet {
+			.row {
+				margin-top: 0;
+			}
+		}
+		@include mobile {
+			.row {
+				margin-top: 0;
+			}
 		}
 	}
 	.bot-container {
@@ -742,6 +758,15 @@ html.loading body {
 		background-size: cover;
 		height: 65vh;
 		padding-top: 8vh;
+		@include mobile {
+			height: 50vh;
+		}
+		@include tablet {
+			height: 50vh;
+		}
+		@include phablet {
+			height: 50vh;
+		}
 		/*background-position: 0 80%;*/
 		.row {
 			margin: 0;	
@@ -1152,6 +1177,9 @@ body {
 	padding-top: 30px;
 	.col-lg-3 {
 		background-color: white;
+		@include phablet {
+			display: none;
+		}
 		@include mobile {
 			display: none;
 		}

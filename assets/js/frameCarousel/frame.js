@@ -33,7 +33,7 @@ $(document).ready(function () {
 			'../assets/img/carousel/10.jpg'
 		],
 
-		autoplay: false,
+		autoplay: true,
 
 		autoplayInterval: 3500,
 
