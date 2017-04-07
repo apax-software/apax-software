@@ -1,0 +1,29 @@
+- company: Mobile Serve
+  image_url: mobile-serve-logo.png
+  site_url: https://mobileserve.com/
+  description: APAX built the web and mobile platform for MobileServe from the ground up, and we’re rolling out new features every week! The core system is built on django and also includes apps for iOS and Android. The software is fully responsive and includes ecommerce, complex reporting, social media, and user on-boarding.
+
+- company: Univ of Kentucky
+  image_url: university_of_kentucky_logo_grey.png
+  site_url: http://uksga.org/
+  description: APAX has a long history with the University of Kentucky and provides application development services, website design services, mobile platform development, and more! Our work is visible across campus and ranges from designing Drupal sites, collecting data for research programs, and developing software for the athletics program.
+
+- company: Keeneland
+  image_url: keeneland_logo_grey.jpg
+  site_url: https://www.keeneland.com/racing/app
+  description: APAX partnered with Cornett, an ad agency, to build and maintain the Keeneland Race Day mobile platform. The app aggregates data from several sources to allow users to view race odds, payouts, and results. It is supported on iPhone, iPad, and Android.
+
+- company: LFUCG
+  image_url: LFUCG_smallcolor_grey.jpg
+  site_url: https://www.lexingtonky.gov/
+  description: APAX provides ongoing web application development and mobile services to LFUCG. We support the lexingtonky.gov website and have developed a number of mobile platforms for the city of Lexington.
+
+- company: Bullard
+  image_url: bullard.png
+  site_url: https://www.bullard.com/
+  description: APAX helps Bullard with the software that powers their thermal imaging products. Our software is used to configure the imagers and automates the manufacturing processes. APAX works closely with the internal engineers at Bullard to support continued development and debugging of each new line of products.
+
+- company: PC USA
+  image_url: presbyterian_church_grey.png
+  site_url: https://www.pcusa.org/
+  description: APAX has partnered with the Presbyterian Church to provide support and enhancements for their software infrastructure. APAX provides full stack support for their Django, ASP.Net, PHP, and mobile platforms. APAX also supports their largest event, the biennial General Assembly.

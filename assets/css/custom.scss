@@ -117,6 +117,19 @@ $break-large: 1200px;*/
 	}
 }
 
+@include keyframes(letterSpacing) {
+	0% {
+		transform: translateY(-25%);
+		letter-spacing: 20px;
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		letter-spacing: 30px;
+		opacity: 1;
+	}
+}
+
 @include keyframes(spin) {
 	0% { rotation: 0; }
 	50% { rotation: 210; }
@@ -151,7 +164,7 @@ $break-large: 1200px;*/
 	animation-name: fadeFromTop;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
-	animation-duration: 2.1s;
+	animation-duration: 3.1s;
 }
 
 .fade-in-bot {
@@ -160,7 +173,21 @@ $break-large: 1200px;*/
 	animation-timing-function: ease-out;
 	animation-duration: 1.6s;
 }
+.fade-in-bot-slow {
+	animation-name: fadeFromBot;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 3.1s;
+}
 
+.letter-spacing {
+	animation-name: letterSpacing;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 3.1s;
+}
+
+/* scale link on hover */
 a.scale-hover{
 	display: inline-block;
 	overflow: hidden;
@@ -192,9 +219,38 @@ a.scale-hover{
 	}
 }
 
-/*@include animation(slide-right) {
-	margin-left: 24px; 
-}*/
+/* BOUNCE RIGHT */
+@keyframes bounce {
+	0%,10%,20%,50%,80%,100%{transform:translateY(0)}
+	40%{transform:translateX(10px)}
+	60%{transform:translateX(10px)}
+}
+
+
+.faa-bounce.animated,
+.faa-bounce.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce {
+	animation: bounce 2s ease infinite;
+}
+.faa-bounce.animated-delay {
+	animation-delay: 5s;
+}
+.faa-bounce.animated.faa-fast,
+.faa-bounce.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-fast {
+	animation: bounce 1s ease infinite;
+}
+.faa-bounce.animated.faa-slow,
+.faa-bounce.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-slow {
+	animation: bounce 3s ease infinite;
+}
+
+/* LETTER SPACING TRANSITION */
+
+.letter-spacing {
+
+}
 
 
 /********************************** Font *********************************************/
@@ -365,12 +421,6 @@ h3 {
     	color: white;
     	margin-top: 12px;
     	@include font-size(4);
-		/*transition: all 0.3s ease;*/
-		@include transition(all, 0.3s, ease);
-    	&:hover {
-    		/*margin-left: 24px;*/
-    		@include slide-right(24px);
-    	}
 	}
 	@include mobile {
 		font-size: 16px;
@@ -475,7 +525,7 @@ h3 {
 	}
 	.hover-fade {
 		display: none;
-		p, h5 {
+		p {
 			margin: 8%;
 			color: white;
 		}
@@ -484,6 +534,7 @@ h3 {
 			text-transform: uppercase;
 			font-weight: 600;
 			letter-spacing: 2px;
+			margin: 8% 0;
 			@include font-size(1.25);
 
 			@include tablet {
@@ -508,6 +559,9 @@ h3 {
 				font-size: 12px;
 				line-height: 14px;
 			}
+		}
+		a {
+			color: white;
 		}
 	}
 	&:hover {
