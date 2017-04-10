@@ -18,6 +18,10 @@ $color_silver_chalice_approx: #aaa;
 $break-small: 500px;
 $break-large: 1200px;*/
 
+/*****pages*****/
+
+
+
 /********************************** Aimations ****************************************/
 
 @mixin keyframes($animation-name) {
@@ -347,7 +351,10 @@ hr {
 		border: 1px solid black;
 	}
 }
-
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
 .navbar-default .navbar-nav {
 	li.active > a {
 		background-color: #e6e6e6;
@@ -1082,6 +1089,16 @@ html.loading body {
 		min-height: 150vh;
 		padding-top: 8vh;
 		/*background-position: 0 80%;*/
+		h1 {
+			@include font-size(4);
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 14px;
+		}
+	}
+	.header {
+		background-color: $color_background_grey;
+		mix-blend-mode: multiply;
 	}
 	
 	.col-md-4 {
