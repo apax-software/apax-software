@@ -19,8 +19,35 @@ $break-small: 500px;
 $break-large: 1200px;*/
 
 /*****pages*****/
+@mixin about_page {
+	.About-wrap { 
+		@content;
+	}
+}
 
+@mixin services_page {
+	.Services-wrap { 
+		@content;
+	}
+}
 
+@mixin portfolio_page {
+	.Portfolio-wrap { 
+		@content;
+	}
+}
+
+@mixin team_page {
+	.Team-wrap { 
+		@content;
+	}
+}
+
+@mixin contact_page {
+	.Contact-wrap { 
+		@content;
+	}
+}
 
 /********************************** Aimations ****************************************/
 
@@ -786,7 +813,7 @@ html.loading body {
 	mix-blend-mode: multiply;
 }*/
 
-.Services-wrap {
+@include services_page {
 	.top-container {
 		background: url("/assets/img/backgrounds/services-top-min.jpg") no-repeat;
 		background-size: cover;
@@ -931,7 +958,7 @@ html.loading body {
 }
 
 
-.Portfolio-wrap {
+@include portfolio_page {
 	background: url("/assets/img/backgrounds/portfolio-min.jpg") no-repeat fixed 100% 100%;
 	background-size: cover;
 	min-height: 100vh;
@@ -961,7 +988,7 @@ html.loading body {
 	}
 }
 
-.Contact-wrap, #contact {
+@include contact_page {
 	.top-container {
 		background: url("/assets/img/backgrounds/mtn-top-min.jpg") no-repeat;
 		background-size: cover;
@@ -1018,7 +1045,7 @@ html.loading body {
 	}
 }
 
-.About-wrap {
+@include about_page {
 	.top-container {
 		background: url("/assets/img/backgrounds/mtn-top-min.jpg") no-repeat;
 		background-size: cover;
@@ -1037,9 +1064,6 @@ html.loading body {
 		min-height: 115vh;
 		padding-top: 3vh;
 		/*background-position: 0 80%;*/
-	}
-	.about-page {
-		background-image: url("/assets/img/headers/Coding.png");
 	}
 	p, ul {
 		text-align: justify;
