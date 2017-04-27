@@ -19,6 +19,8 @@ $(document).ready(function() {
 			$("#headerwrap").css("width", getWindowWidth());
 		});
 	}
+
+	
 });
 
 var getWindowHeight = function() {
