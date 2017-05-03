@@ -27,10 +27,7 @@ $(document).ready(function () {
 			'../assets/img/carousel/4m.jpeg',
 			'../assets/img/carousel/5m.jpg',
 			'../assets/img/carousel/6m.jpg',
-			'../assets/img/carousel/7m.jpg',
-			'../assets/img/carousel/8.jpg',
-			'../assets/img/carousel/9.jpg',
-			'../assets/img/carousel/10.jpg'
+			'../assets/img/carousel/7m.jpg'
 		],
 
 		autoplay: true,
@@ -69,13 +66,10 @@ $(document).ready(function () {
 			'../assets/img/carousel/4d.png',
 			'../assets/img/carousel/5d.png',
 			'../assets/img/carousel/6d.png',
-			'../assets/img/carousel/7d.png',
-			'../assets/img/carousel/8d.png',
-			'../assets/img/carousel/9d.png',
-			'../assets/img/carousel/10d.png'
+			'../assets/img/carousel/7d.png'
 		],
 
-		autoplay: true,
+		autoplay: false,
 
 		autoplayInterval: 4500,
 
