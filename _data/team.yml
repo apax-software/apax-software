@@ -14,7 +14,7 @@
 
 - full_name: Keith Kurzendoerfer
   pic_name: keith
-  title: Vice President
+  title: President
   phone_number: 8595769590
   display_phone: (859)576.9590
 
@@ -49,25 +49,30 @@
 - full_name: Zach Frey
   pic_name: zach
   title: Designer
-  email: zach.frey@awesomeinc.org
+  email: zach.frey
+  email_ext: awesomeinc.org
 
 - full_name: Emily Andrews
   pic_name: emily
   title: Director, Operations
-  email: emily@awesomeinc.org
+  email: emily
+  email_ext: awesomeinc.org
 
 - full_name: Amanda Murray
   pic_name: amanda
   title: Director, Marketing
-  email: amanda@awesomeinc.org
+  email: amanda
+  email_ext: awesomeinc.org
 
 - full_name: Keith McMunn
   pic_name: keithm
   title: Director, Awesome Fellowship
-  email: keith.mcmunn@awesomeinc.org
+  email: keith.mcmunn
+  email_ext: awesomeinc.org
 
 - full_name: Nick Such
   pic_name: nick
   title: Director, Awesome Inc U
-  email: nick@awesomeinc.org
+  email: nick
+  email_ext: awesomeinc.org
 

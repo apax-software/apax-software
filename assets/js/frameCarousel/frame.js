@@ -69,7 +69,7 @@ $(document).ready(function () {
 			'../assets/img/carousel/7d.png'
 		],
 
-		autoplay: false,
+		autoplay: true,
 
 		autoplayInterval: 4500,
 

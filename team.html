@@ -25,7 +25,12 @@ redirect-from:
 				{% else %}
 					{{ member.pic_name }}
 				{% endif %}
-				@apaxsoftware.com"><i class="fa fa-envelope-o faa-bounce animated-hover animated-delay"></i></a></p>
+				{% if member.email_ext %}
+					@{{ member.email_ext }}"
+				{% else %}
+					@apaxsoftware.com"
+				{% endif %}
+					><i class="fa fa-envelope-o faa-bounce animated-hover animated-delay"></i></a></p>
 				{% if member.phone_number %}
 					<p class="phone"><i class="fa fa-mobile-phone"></i><a href="tel:{{ member.phone_number }}">{{ member.display_phone }}</a></p>
 				{% endif %}</p>

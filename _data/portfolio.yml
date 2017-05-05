@@ -3,15 +3,15 @@
   site_url: https://mobileserve.com/
   description: APAX built the web and mobile platform for MobileServe from the ground up, and we’re rolling out new features every week! The core system is built on django and also includes apps for iOS and Android. The software is fully responsive and includes ecommerce, complex reporting, social media, and user on-boarding.
 
-- company: Univ of Kentucky
-  image_url: university_of_kentucky_logo_grey.png
-  site_url: http://uksga.org/
-  description: APAX has a long history with the University of Kentucky and provides application development services, website design services, mobile platform development, and more! Our work is visible across campus and ranges from designing Drupal sites, collecting data for research programs, and developing software for the athletics program.
-
 - company: Keeneland
   image_url: keeneland_logo_grey.jpg
   site_url: https://www.keeneland.com/racing/app
   description: APAX partnered with Cornett, an ad agency, to build and maintain the Keeneland Race Day mobile platform. The app aggregates data from several sources to allow users to view race odds, payouts, and results. It is supported on iPhone, iPad, and Android.
+
+- company: Univ of Kentucky
+  image_url: uk.png
+  site_url: http://uksga.org/
+  description: APAX has a long history with the University of Kentucky and provides application development services, website design services, mobile platform development, and more! Our work is visible across campus and ranges from designing Drupal sites, collecting data for research programs, and developing software for the athletics program.
 
 - company: LFUCG
   image_url: LFUCG_smallcolor_grey.jpg
