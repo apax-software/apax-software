@@ -1232,7 +1232,7 @@ html.loading body {
 		background: url("/assets/img/backgrounds/mtn-top-min.jpg") no-repeat;
 		background-size: cover;
 		height: 15vh;
-		/*background-position: 0 80%;*/
+		background-position: 0 100%;
 		h1 {
 			@include font-size(4);
 			font-weight: 700;
@@ -1245,7 +1245,8 @@ html.loading body {
 		background-size: cover;
 		height: 100vh;
 		padding-top: 3vh;
-		/*background-position: 0 80%;*/
+		/*background-color: $color_background_grey;*/
+		/*background-blend-mode: multiply;*/
 	}
 	.contact-page {
 		background-image: url("/assets/img/headers/Typing.png");
@@ -1289,7 +1290,7 @@ html.loading body {
 		background: url("/assets/img/backgrounds/mtn-top-min.jpg") no-repeat;
 		background-size: cover;
 		height: 15vh;
-		/*background-position: 0 80%;*/
+		background-position: 0 100%;
 		h1 {
 			@include font-size(4);
 			font-weight: 700;
@@ -1333,12 +1334,12 @@ html.loading body {
 	}
 }
 
-.Team-wrap {
+@include team_page {
 	.top-container {
-		background: url("/assets/img/backgrounds/mtn-top-min.jpg") no-repeat;
+		background: url("/assets/img/backgrounds/test-top.jpg") no-repeat;
 		background-size: cover;
 		height: 15vh;
-		/*background-position: 0 80%;*/
+		background-position: 50% 100%;
 		h1 {
 			@include font-size(4);
 			font-weight: 700;
@@ -1347,11 +1348,11 @@ html.loading body {
 		}
 	}
 	.bot-container {
-		background: url("/assets/img/backgrounds/mtn-bot-min.jpg") no-repeat;
+		background: url("/assets/img/backgrounds/test-bot.jpg") no-repeat;
 		background-size: cover;
 		min-height: 150vh;
 		padding-top: 8vh;
-		/*background-position: 0 80%;*/
+		background-position: 33% 100%;
 		h1 {
 			@include font-size(4);
 			font-weight: 700;
