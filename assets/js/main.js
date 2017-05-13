@@ -8,6 +8,7 @@ $(window).on("load", function() {
 	$ ( 'html' ).removeClass( "loading" );
 })
 
+
 $(document).ready(function() {
 
 	//make bg image full size
@@ -18,6 +19,10 @@ $(document).ready(function() {
 			$("#headerwrap").css("height", getWindowHeight())- 50; 
 			$("#headerwrap").css("width", getWindowWidth());
 		});
+	}
+
+	if(document.body.clientWidth >= 870) {
+		$('#bg-video').attr('autoplay', true);
 	}
 
 	
