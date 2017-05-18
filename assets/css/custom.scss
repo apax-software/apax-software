@@ -774,6 +774,7 @@ h3 {
 	}
 }
 
+
 #bg-video {
 	position: fixed;
 	top: 50%;
@@ -784,8 +785,8 @@ h3 {
 	height: auto;
 	z-index: -100;
 	transform: translateX(-50%) translateY(-50%);
-	/*background: url('../img/backgrounds/video-pic-min.jpg') no-repeat;
-	background-size: 100% 100%;*/
+	// background: url('../img/backgrounds/video-pic-min.jpg') no-repeat;
+	// background-size: 100% 100%;
 	transition: 1s opacity;
 }
 
@@ -808,8 +809,14 @@ h3 {
     -o-background-size: cover;
     background-size: cover;
 
+    @media (max-width: 768px) {
+        background: url(../img/backgrounds/video-pic_mobile.jpg) no-repeat center top;
+        width: auto;
+        height: auto;
+    }
+
     @include mobile {
-    	height: 300px;
+        height: 300px;
     }
     h1 {
     	color: 333333;
