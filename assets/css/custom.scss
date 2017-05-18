@@ -1318,6 +1318,9 @@ html.loading body {
 		background-blend-mode: multiply;
 		/*background-position: 0 80%;*/
 	}
+    img {
+        width: 100%;
+    }
 	p, ul {
 		text-align: justify;
 		color: $black;
