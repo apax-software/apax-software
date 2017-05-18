@@ -676,79 +676,141 @@ h3 {
 /************************************* Boxes *****************************************/
 
 .box {
-	background-color: white;
-	height: 225px;
-	width: 225px;
-	margin: 15% auto;
-	&.horizontal {
-		display: flex;
-		justify-content: center;
-	}
-	.vertical {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	img {
-		margin-left: 10%;
-		width: 80%;
-	}
-	.hover-fade {
-		display: none;
-		p {
-			margin: 8%;
-			color: white;
-		}
-		h5 {
-			text-align: center;
-			text-transform: uppercase;
-			font-weight: 600;
-			letter-spacing: 2px;
-			margin: 8% 0;
-			@include font-size(1.25);
+    background-color: white;
+    height: 225px;
+    width: 225px;
+    margin: 15% auto;
+    &.horizontal {
+        display: flex;
+        justify-content: center;
 
-			@include tablet {
-				font-size: 16px;
-			}
+    }
+    .vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img {
+        margin-left: 10%;
+        width: 80%;
+    }
+    h5 {
+        text-align: left;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 8%;
+        @include font-size(1.25);
 
-			@include mobile {
-				@include font-size(1.75);
-			}
-		}
-		p {
-			text-align: justify;
-			@include font-size(1);
-			@include line-height(1.25);
+        @include tablet {
+            font-size: 16px;
+        }
 
-			@include mobile {
-				@include font-size(1.35);
-				@include line-height(1.6)
-			}
+        @include mobile {
+            @include font-size(1.75);
+        }
+    }
+    .hover-fade {
+        display: none;
+        p {
+            margin: 8%;
+            color: white;
+            @include font-size(1);
+            @include line-height(1.25);
 
-			@include tablet {
-				font-size: 12px;
-				line-height: 14px;
-			}
-		}
-		a {
-			color: white;
-		}
-	}
-	&:hover, &:focus {
-		background-color: $color_background_red_alpha;
-		.hover-fade {
-			display: block;
-		}
-		.vertical {
-			display: none;
-		}
-	}
-	@include mobile {
-		margin: 15% auto;
-		&:last-child {
-			/*margin-bottom: 0;*/
-		}
-	}
+            @include mobile {
+                @include font-size(1.35);
+                @include line-height(1.6)
+            }
+
+            @include tablet {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+    a {
+        i {
+            color: black;
+            font-size: 150%;
+        }
+    }
+
+    // &:hover, &:focus {
+    //  background-color: $color_background_red_alpha;
+    //  .hover-fade {
+    //      display: block;
+    //  }
+    //  .vertical {
+    //      display: none;
+    //  }
+    // }
+    @include mobile {
+        margin: 15% auto;
+        &:last-child {
+            /*margin-bottom: 0;*/
+        }
+    }
+}
+.portfolio_description {
+    background-color: $color_background_red_alpha;
+    a {
+        color: white;
+    }
+    p {
+        margin: 8%;
+        color: white;
+        @include font-size(1);
+        @include line-height(1.25);
+
+        @include mobile {
+            @include font-size(1.35);
+            @include line-height(1.6)
+        }
+
+        @include tablet {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    #mobileserve-description {
+        display: block;
+    }
+    #keeneland-description {
+        display: block;
+    }
+    #uk-description {
+        display: block;
+    }
+    #lfucg-description {
+        display: block;
+    }
+    #bullard-description {
+        display: block;
+    }
+    #pcusa-description {
+        display: block;
+    }
+}
+#mobileserve-description {
+    display: none;
+}
+#keeneland-description {
+    display: none;
+}
+#uk-description {
+    display: none;
+}
+#lfucg-description {
+    display: none;
+}
+#bullard-description {
+    display: none;
+}
+#pcusa-description {
+    display: none;
 }
 
 .box-small {
@@ -1210,6 +1272,24 @@ html.loading body {
 	background: url("/assets/img/backgrounds/portfolio-min.jpg") no-repeat fixed 100% 100%;
 	background-size: cover;
 	min-height: 100vh;
+
+    img {
+        // margin-left: 28px;
+        // margin-top: 45px;
+        margin-top: 20px;
+    }
+    .bullard_img {
+        margin-top: 50px;
+    }
+    .mobileserve_img {
+        margin-top: 50px;
+    }
+    .more_info {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        height: 20px;
+    }
 }
 
 .PortfolioDetail-wrap {

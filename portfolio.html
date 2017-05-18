@@ -8,19 +8,97 @@ redirect_from:
 
 <div class="container-fluid top-container">
 	<div class="container">
+
+		<script>
+		$(document).ready(function(){
+		    $("#mobileserve").click(function(){
+		        $("#mobileserve-img").hide();
+		        $("#mobileserve").addClass("portfolio_description");
+		    });
+		    $("#keeneland").click(function(){
+		        $("#keeneland-img").hide();
+		        $("#keeneland").addClass("portfolio_description");
+		    });
+		    $("#uk").click(function(){
+		        $("#uk-img").hide();
+		        $("#uk").addClass("portfolio_description");
+		    });
+		    $("#lfucg").click(function(){
+		        $("#lfucg-img").hide();
+		        $("#lfucg").addClass("portfolio_description");
+		    });
+		    $("#bullard").click(function(){
+		        $("#bullard-img").hide();
+		        $("#bullard").addClass("portfolio_description");
+		    });
+		    $("#pcusa").click(function(){
+		        $("#pcusa-img").hide();
+		        $("#pcusa").addClass("portfolio_description");
+		    });
+		});
+		</script>
+
 		<!-- <div class="row"> -->
 			<div class="col-md-10 col-md-offset-1">
 				{% for company in site.data.portfolio %}
 				<div class="col-md-4 col-sm-6 col-xs-12">
+
+					<div id="{{company.name}}" class="box horizontal col-xs-12" tabindex="0">
+						<a href="#">
+							<div
+							  {% if company.name == 'bullard' %}
+							  	class="vertical bullard_img"
+							  {% endif %}
+							  {% if company.name == 'mobileserve' %}
+							  	class="vertical mobileserve_img"
+							  {% else %}
+							    class="vertical"
+							  {% endif %}
+							>
+								<img id="{{company.name}}-img" src="/assets/img/portfolio/{{ company.image_url }}" alt="{{ company.company }} Logo" />
+							</div>
+							<a class="more_info" href="#">
+								<span id="{{company.name}}-description" class="col-xs-8">Visit Site</span>
+								<span><i class="fa fa-arrow-right col-xs-4" aria-hidden="true"></i></span>
+							</a>
+						</a>
+
+						<a  id="{{ company.name }}-description" href="{{ company.site_url }}" target="_blank">
+							<div>
+								<h5>{{ company.company }}</h5>
+								<p>{{ company.description }}</p>		
+							</div>
+						</a>
+
+					</div>
+
+<!-- 						<a href="{{ company.site_url }}" target="_blank">
+							<div class="hover-fade">
+								<h5>{{ company.company }}</h5>
+								<p>{{ company.description }}</p>		
+							</div>
+						</a>
+
+
+<!-- 
 					<div class="box horizontal" tabindex="0">
-						<div class="vertical">
-							<img class="fade-in" src="/assets/img/portfolio/{{ company.image_url }}" alt="{{ company.company }} Logo" />
-						</div>
+						<a href="#">
+							<div class="vertical">
+								<img class="fade-in" src="/assets/img/portfolio/{{ company.image_url }}" alt="{{ company.company }} Logo" />
+
+								<a class="more_info" href="#">More Information</a>
+							</div>
+						</a>
 						<div class="hover-fade">
 							<h5><a href="{{ company.site_url }}" class="scale-hover"><span data-hover="{{ company.company }}">{{ company.company }}</span></a></h5>
 							<p>{{ company.description }}</p>		
 						</div>
 					</div>
+ -->
+
+
+
+
 				</div>
 				{% endfor %}
 				<h3 class="text-center">Plus hundreds of others...</h3>
