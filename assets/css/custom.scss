@@ -811,8 +811,10 @@ h3 {
 
     @media (max-width: 768px) {
         background: url(../img/backgrounds/video-pic_mobile.jpg) no-repeat center top;
-        width: auto;
-        height: auto;
+        h1 {
+            margin: 0px;
+            font-size: 28px !important;
+        }
     }
 
     @include mobile {
