@@ -369,11 +369,11 @@ $mobile_width: 450px;
 	animation: bounce 3s ease infinite;
 }
 
-/* hamburger menu */
+/*************************** hamburger menu ****************************/
 navbar-header img.mobile {
 	margin-top: 4px;
 }
-@include not_desktop {
+@media (max-width: 768px) {
 	.mobile {
 		margin-top: 9px;
 	}
@@ -734,7 +734,7 @@ h3 {
 			color: white;
 		}
 	}
-	&:hover {
+	&:hover, &:focus {
 		background-color: $color_background_red_alpha;
 		.hover-fade {
 			display: block;
@@ -1238,6 +1238,7 @@ html.loading body {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
+			color: #525252;
 		}
 	}
 	.bot-container {
@@ -1245,8 +1246,8 @@ html.loading body {
 		background-size: cover;
 		height: 100vh;
 		padding-top: 3vh;
-		/*background-color: $color_background_grey;*/
-		/*background-blend-mode: multiply;*/
+		background-color: #eee;
+		background-blend-mode: multiply;
 	}
 	.contact-page {
 		background-image: url("/assets/img/headers/Typing.png");
@@ -1296,6 +1297,7 @@ html.loading body {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
+			color: #525252;
 		}
 	}
 	.bot-container {
@@ -1303,6 +1305,8 @@ html.loading body {
 		background-size: cover;
 		min-height: 115vh;
 		padding-top: 3vh;
+		background-color: #eee;
+		background-blend-mode: multiply;
 		/*background-position: 0 80%;*/
 	}
 	p, ul {
@@ -1345,6 +1349,7 @@ html.loading body {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
+			color: #525252;
 		}
 	}
 	.bot-container {
@@ -1353,6 +1358,8 @@ html.loading body {
 		min-height: 150vh;
 		padding-top: 8vh;
 		background-position: 33% 100%;
+		background-color: #ffffff;
+		background-blend-mode: multiply;
 		h1 {
 			@include font-size(4);
 			font-weight: 700;
@@ -1373,6 +1380,10 @@ html.loading body {
 		margin: 0;
 		// margin-bottom: 40px;
 	}
+	/*.team-info {
+		background-color: rgba(245, 245, 245, 0.75);
+		padding: 0 6px 16px 6px;
+	}*/
 	i {
 		color: $color_cardinal_approx;
 		margin-right: 4px;
