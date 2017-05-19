@@ -1,3 +1,15 @@
+- company: Univ of Kentucky
+  name: uk
+  image_url: uk.png
+  site_url: http://uksga.org/
+  description: Our work is visible across campus and ranges from designing Drupal sites, collecting data for research programs, mobile app development, and developing custom platforms for the athletics program.
+
+- company: PC USA
+  name: pcusa
+  image_url: presbyterian_church_grey.png
+  site_url: https://www.pcusa.org/
+  description: APAX has partnered with the Presbyterian Church to provide support and enhancements for their software infrastructure. APAX provides full stack support for their Django, ASP.Net, PHP, and mobile platforms.
+
 - company: Mobile Serve
   name: mobileserve
   image_url: mobile-serve-logo.png
@@ -10,12 +22,6 @@
   site_url: https://www.keeneland.com/racing/app
   description: APAX partnered with Cornett to build and maintain the Keeneland Race Day mobile platform. The app aggregates data from several sources to allow users to view race odds, payouts, and results.
 
-- company: Univ of Kentucky
-  name: uk
-  image_url: uk.png
-  site_url: http://uksga.org/
-  description: Our work is visible across campus and ranges from designing Drupal sites, collecting data for research programs, mobile app development, and developing custom platforms for the athletics program.
-
 - company: LFUCG
   name: lfucg
   image_url: LFUCG_smallcolor_grey.jpg
@@ -27,9 +33,3 @@
   image_url: bullard.png
   site_url: https://www.bullard.com/
   description: APAX helps Bullard with the software that powers their thermal imaging products. APAX works closely with the internal engineers at Bullard to support continued development and debugging of each new line of products.
-
-- company: PC USA
-  name: pcusa
-  image_url: presbyterian_church_grey.png
-  site_url: https://www.pcusa.org/
-  description: APAX has partnered with the Presbyterian Church to provide support and enhancements for their software infrastructure. APAX provides full stack support for their Django, ASP.Net, PHP, and mobile platforms.

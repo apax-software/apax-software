@@ -743,65 +743,65 @@ h3 {
         }
     }
 }
-.portfolio_description {
-    background-color: $color_background_red_alpha;
-    a {
-        color: white;
-    }
-    p {
-        margin: 8%;
-        color: white;
-        @include font-size(1);
-        @include line-height(1.25);
+// .portfolio_description {
+//     background-color: $color_background_red_alpha;
+//     a {
+//         color: white;
+//     }
+//     p {
+//         margin: 8%;
+//         color: white;
+//         @include font-size(1);
+//         @include line-height(1.25);
 
-        @include mobile {
-            @include font-size(1.35);
-            @include line-height(1.6)
-        }
+//         @include mobile {
+//             @include font-size(1.35);
+//             @include line-height(1.6)
+//         }
 
-        @include tablet {
-            font-size: 12px;
-            line-height: 14px;
-        }
-    }
+//         @include tablet {
+//             font-size: 12px;
+//             line-height: 14px;
+//         }
+//     }
 
-    #mobileserve-description {
-        display: block;
-    }
-    #keeneland-description {
-        display: block;
-    }
-    #uk-description {
-        display: block;
-    }
-    #lfucg-description {
-        display: block;
-    }
-    #bullard-description {
-        display: block;
-    }
-    #pcusa-description {
-        display: block;
-    }
-}
-#mobileserve-description {
-    display: none;
-}
-#keeneland-description {
-    display: none;
-}
-#uk-description {
-    display: none;
-}
-#lfucg-description {
-    display: none;
-}
-#bullard-description {
-    display: none;
-}
-#pcusa-description {
-    display: none;
-}
+//     #mobileserve-description {
+//         display: block;
+//     }
+//     #keeneland-description {
+//         display: block;
+//     }
+//     #uk-description {
+//         display: block;
+//     }
+//     #lfucg-description {
+//         display: block;
+//     }
+//     #bullard-description {
+//         display: block;
+//     }
+//     #pcusa-description {
+//         display: block;
+//     }
+// }
+// #mobileserve-description {
+//     display: none;
+// }
+// #keeneland-description {
+//     display: none;
+// }
+// #uk-description {
+//     display: none;
+// }
+// #lfucg-description {
+//     display: none;
+// }
+// #bullard-description {
+//     display: none;
+// }
+// #pcusa-description {
+//     display: none;
+// }
 
 .box-small {
 	width: 80px;
@@ -843,11 +843,6 @@ h3 {
 }
 
 #headerwrap {
-	/*background: url(../img_2/city.jpg) no-repeat center top;
-	background-color: $color_background_red;
-	background-blend-mode: multiply;
-	background-attachment: relative;
-	background-position: center center;*/
 	min-height: 500px;
 	width: 100%;
 	
@@ -1161,61 +1156,54 @@ html.loading body {
 	background-size: cover;
 	min-height: 100vh;
 
-    img {
+    color: white;
+    a {
+        color: white;
+    }
+    p {
+        margin-top: 10px;
+        text-align: left;
+        font-size: 120%;
+        font-weight: 400;
+    }
+
+    .box {
         margin-top: 20px;
-    }
-    .bullard_img {
-        margin-top: 50px;
-    }
-    .mobileserve_img {
-        margin-top: 50px;
-    }
-    .more_info {
-        position: absolute;
-        bottom: 10px;
-        right: 5px;
-        height: 20px;
-    }
-
-    .horizontal {
-        @include mobile {
-            padding-top: 100%;
-            width: 100%;
-
-            div {
-                position: absolute;
-                top: 0;
-                left: 0;
-                p {
-                    font-size: 1.1em;
-                    line-height: 1.2em;
-                }
-            }
+        margin-bottom: 10px;
+        img {
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
+        #uk_img {
+            margin-top: 40px;
+        }
+        #keeneland_img {
+            margin-top: 40px;
+        }
+        #mobileserve_img {
+            margin-top: 80px;
+        }
+        #bullard_img {
+            margin-top: 80px;
         }
     }
+
+    h3 {
+        @include mobile {
+            font-size: 150%;
+        }
+    }
+    @include mobile {
+         padding-bottom: 20px;
+         p {
+            margin-bottom: 20px;
+         }
+    }
+
 }
 
-.PortfolioDetail-wrap {
-	.top-container {
-		background: url("/assets/img/backgrounds/portfolio-detail-min-top.jpg") no-repeat;
-		background-size: cover;
-		background-position-y: -25vh;
-		min-height: 70vh;
-	}
-	.bot-container {
-		background: url("/assets/img/backgrounds/portfolio-detail-min-bot.jpg") no-repeat;
-		background-size: cover;
-		min-height: 24vh;
-		.col-md-6 {
-			display: table-cell;
-			vertical-align: middle;
-			text-align: center;
-		}
-		.col-md-5ths {
-			display: inline-block;
-		}
-	}
-}
+
 
 @include contact_page {
 	.top-container {
