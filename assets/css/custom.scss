@@ -737,20 +737,9 @@ h3 {
             font-size: 150%;
         }
     }
-
-    // &:hover, &:focus {
-    //  background-color: $color_background_red_alpha;
-    //  .hover-fade {
-    //      display: block;
-    //  }
-    //  .vertical {
-    //      display: none;
-    //  }
-    // }
     @include mobile {
         margin: 15% auto;
         &:last-child {
-            /*margin-bottom: 0;*/
         }
     }
 }
@@ -979,8 +968,6 @@ html.loading body {
 		color: white;
 		font-family: 'open sans';
 		font-weight: 600;
-		// font-style: shadow;
-		// text-shadow: 1px 3px rgba(0,0,0, 0.5);
 	}
 	h1 {
 		padding: 70px 0 0px 0;
@@ -1003,35 +990,37 @@ html.loading body {
 	}
 }
 
-/*
-.background-blend {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-.background-blend::before {
-	content: '';
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	background-color: $color_background_red;
-	mix-blend-mode: multiply;
-}*/
+
 
 @include services_page {
+    color: white;
+    a {
+        color: white;
+    }
+    p {
+        margin-top: 10px;
+        text-align: left;
+        font-size: 120%;
+        font-weight: 400;
+    }
+    .computer {
+        margin-top: 10px !important;
+    }
 	.top-container {
 		background: url("/assets/img/backgrounds/services-top-min.jpg") no-repeat;
 		background-size: cover;
-		height: 90vh;
-		/*background-position: 0 80%;*/
+        border-bottom: 5px solid black;
+        .carousel-frame {
+            min-height: 0;
+        }
 		h3 {
+            @include mobile {
+                font-size: 150%;
+            }
 			margin-top: 0vh;
 			&:first-child {
 				@include mobile {
-					margin-top: 5vh;
+					margin-top: 0vh;
 				}
 			}
 			@include phablet {
@@ -1049,7 +1038,6 @@ html.loading body {
 			}
 		}
 		@include mobile {
-			height: 125vh;
 			.row {
 				margin-top: 0;
 			}
@@ -1057,141 +1045,46 @@ html.loading body {
 	}
 	.bot-container {
 		background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
+        border-bottom: 5px solid black;
 		background-size: cover;
-		height: 65vh;
-		padding-top: 8vh;
+		padding-bottom: 20px;
+        h3 {
+            margin-top: 20px;
+            @include mobile {
+                font-size: 150%;
+            }
+        }
 		@include mobile {
-			height: 100vh;
+			 padding-bottom: 20px;
 		}
 		@include tablet {
-			height: 100vh;
+			 padding-bottom: 20px;
 		}
 		@include phablet {
-			height: 100vh;
+			 padding-bottom: 20px;
 		}
-		/*background-position: 0 80%;*/
 		.row {
 			margin: 0;	
 		}
 		h3 {
-			margin-top: 8vh;
 			@include mobile {
 				margin-top: 0;
 			}
 		}
 		img {
 			width: 40%;
+            padding-top: 30px;
 			@include mobile {
+                padding-top: 0px;
 				width: 60%;
 				margin: 10% 0;
 			}
 		}
 	}
-	/* line above link on hover */
-	.line-above-hover {
-		padding: 0 0 10px;
-	}
-	.line-above-hover::after {
-		position: absolute;
-		top: 85%;
-		left: 0;
-		width: 80%;
-		margin-left: 10%;
-		height: 1px;
-		background: black;
-		content: '';
-		opacity: 0;
-		-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-		-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-		transition: height 0.3s, opacity 0.3s, transform 0.3s;
-		-webkit-transform: translateY(-10px);
-		-moz-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-	.invert-bg.line-above-hover::after {
-		top: 85%;
-		background: $color_cardinal_approx;
-	}
-	.thin-hover.line-above-hover::after {
-		width: 60%;
-		margin-left: 20%;
-	}
-	.carousel-frame:hover .line-above-hover::after,
-	.carousel-frame:focus .line-above-hover::after, 
-	.frame-icon:hover .line-above-hover::after, 
-	.frame-icon:focus .line-above-hover::after, {
-		height: 7px;
-		opacity: 1;
-		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(0px);
-		transform: translateY(0px);
-	}
-	.hover-text p {
-		opacity: 0;
-		color: white;
-		text-align: justify;
-		position: absolute;
-		margin: 0 10%;
-		top: 35%;
-		font-weight: 400;
-		@include mobile {
-			&.offset {
-				top: 35%;
-			}
-			top: 15%;
-			margin: 0 5% 0 0;
-		}
-	}
-	.bot-container .hover-text p {
-		top: 25%;
-		margin: 0 15%;
-		@include mobile {
-			top: 15%; 
-			margin: 0 10% 0 5%;
-		}
-	}
-
-	.hover-text.mobile-show p {
-		@include mobile {
-			opacity: 1;
-			animation: none;
-		}
-	}
-	.thin-hover p {
-		margin: 0 20%;
-		@include not_desktop {
-			margin: 0 5% 0 0;
-		}
-	}
-
-	.carousel-frame:hover .iphone-frame,
-	.carousel-frame:focus .iphone-frame, 
-	.carousel-frame:hover .mac-frame,
-	.carousel-frame:focus .mac-frame,
-	.frame-icon:hover img,
-	.frame-icon:focus img {
-		animation-name: fadeOut;
-		animation-duration: 0.6s;
-		animation-timing-function: ease-out;
-		opacity: 0;
-	}
-	.carousel-frame:hover .hover-text p,
-	.carousel-frame:focus .hover-text p,
-	.frame-icon:hover .hover-text p,
-	.frame-icon:focus .hover-text p {
-		animation-name: fadeIn;
-		animation-duration: 0.8s;
-		animation-timing-function: ease-out;
-		@include mobile {
-			animation: none;
-		}
-		opacity: 1;
-	}
 	.secondary-services {
 		margin-top: 5vh;
 	}
 	h3 {
-		/*margin-top: ;*/
 		@include font-size(2);
 	}
 	.carousel-frame {
@@ -1232,12 +1125,6 @@ html.loading body {
 			font-size: 20px;
 		}
 	}
-	.segment {
-		a:hover {
-			width: 100%;
-			color: rgb(201, 99, 115);
-		}
-	}
 }
 @include phablet {
 	.desktop-only {
@@ -1275,8 +1162,6 @@ html.loading body {
 	min-height: 100vh;
 
     img {
-        // margin-left: 28px;
-        // margin-top: 45px;
         margin-top: 20px;
     }
     .bullard_img {
@@ -1291,6 +1176,23 @@ html.loading body {
         right: 5px;
         height: 20px;
     }
+
+    .horizontal {
+        @include mobile {
+            padding-top: 100%;
+            width: 100%;
+
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                p {
+                    font-size: 1.1em;
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
 }
 
 .PortfolioDetail-wrap {
@@ -1304,8 +1206,6 @@ html.loading body {
 		background: url("/assets/img/backgrounds/portfolio-detail-min-bot.jpg") no-repeat;
 		background-size: cover;
 		min-height: 24vh;
-		/*padding-top: 3vh;*/
-		/*background-position: 0 80%;*/
 		.col-md-6 {
 			display: table-cell;
 			vertical-align: middle;

@@ -7,7 +7,8 @@ $(document).ready(function () {
 
 		frameSize: [{
 			// width: 10,
-			width: 250
+			// width: 250
+			width: 107
 			// minScreenWidth: 200,
 			// maxScreenWidth: 400
 		}],
@@ -46,7 +47,8 @@ $(document).ready(function () {
 
 		frameSize: [{
 			// width: 10,
-			width: 487
+			// width: 487
+			width: 200
 			// minScreenWidth: 200,
 			// maxScreenWidth: 400
 		}],

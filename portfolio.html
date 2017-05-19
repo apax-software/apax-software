@@ -12,33 +12,45 @@ redirect_from:
 		<script>
 		$(document).ready(function(){
 		    $("#mobileserve").click(function(){
-	    	    event.preventDefault();
+		    	if ($("#mobileserve").hasClass("portfolio_description") === false) {
+		    	    event.preventDefault();
+		    	}
 		        $("#mobileserve-img").hide();
 		        $("#mobileserve").addClass("portfolio_description");
 		    });
 		    $("#keeneland").click(function(){
-	    	    event.preventDefault();
+		    	if ($("#keeneland").hasClass("portfolio_description") === false) {
+		    	    event.preventDefault();
+		    	}
 		        $("#keeneland-img").hide();
 		        $("#keeneland").addClass("portfolio_description");
 		    });
 		    $("#uk").click(function(){
-	    	    event.preventDefault();
-		        $("#uk-img").hide();
+		    	if ($("#uk").hasClass("portfolio_description") === false) {
+		    	    event.preventDefault();
+		    	}
+		    	$("#uk-img").hide();
 		        $("#uk").addClass("portfolio_description");
 		    });
 		    $("#lfucg").click(function(){
-	    	    event.preventDefault();
-		        $("#lfucg-img").hide();
+		    	if ($("#lfucg").hasClass("portfolio_description") === false) {
+		    	    event.preventDefault();
+		    	}
+		    	$("#lfucg-img").hide();
 		        $("#lfucg").addClass("portfolio_description");
 		    });
 		    $("#bullard").click(function(){
-	    	    event.preventDefault();
-		        $("#bullard-img").hide();
+		    	if ($("#bullard").hasClass("portfolio_description") === false) {
+		    	    event.preventDefault();
+		    	}
+		    	$("#bullard-img").hide();
 		        $("#bullard").addClass("portfolio_description");
 		    });
 		    $("#pcusa").click(function(){
-	    	    event.preventDefault();
-		        $("#pcusa-img").hide();
+		    	if ($("#pcusa").hasClass("portfolio_description") === false) {
+		    	    event.preventDefault();
+		    	}
+		    	$("#pcusa-img").hide();
 		        $("#pcusa").addClass("portfolio_description");
 		    });
 		});
@@ -50,6 +62,7 @@ redirect_from:
 				<div class="col-md-4 col-sm-6 col-xs-12">
 
 					<div id="{{company.name}}" class="box horizontal col-xs-12" tabindex="0">
+
 						<a href="#">
 							<div
 							  {% if company.name == 'bullard' %}
@@ -77,33 +90,6 @@ redirect_from:
 						</a>
 
 					</div>
-
-<!-- 						<a href="{{ company.site_url }}" target="_blank">
-							<div class="hover-fade">
-								<h5>{{ company.company }}</h5>
-								<p>{{ company.description }}</p>		
-							</div>
-						</a>
-
-
-<!-- 
-					<div class="box horizontal" tabindex="0">
-						<a href="#">
-							<div class="vertical">
-								<img class="fade-in" src="/assets/img/portfolio/{{ company.image_url }}" alt="{{ company.company }} Logo" />
-
-								<a class="more_info" href="#">More Information</a>
-							</div>
-						</a>
-						<div class="hover-fade">
-							<h5><a href="{{ company.site_url }}" class="scale-hover"><span data-hover="{{ company.company }}">{{ company.company }}</span></a></h5>
-							<p>{{ company.description }}</p>		
-						</div>
-					</div>
- -->
-
-
-
 
 				</div>
 				{% endfor %}
