@@ -1260,11 +1260,16 @@ html.loading body {
         color: white;
     }
     img {
-        width: 100%;
+        width: 70%;
         margin-bottom: 10px;
+        margin-left: 15%;
+        @include mobile {
+            width: 100%;
+        margin-left: 0;
+        }
     }
 	p, ul {
-		text-align: justify;
+		// text-align: justify;
 		// color: $black;
 		@include font-size(1.5);
 		@include line-height(1.75);
