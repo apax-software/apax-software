@@ -743,65 +743,7 @@ h3 {
         }
     }
 }
-// .portfolio_description {
-//     background-color: $color_background_red_alpha;
-//     a {
-//         color: white;
-//     }
-//     p {
-//         margin: 8%;
-//         color: white;
-//         @include font-size(1);
-//         @include line-height(1.25);
 
-//         @include mobile {
-//             @include font-size(1.35);
-//             @include line-height(1.6)
-//         }
-
-//         @include tablet {
-//             font-size: 12px;
-//             line-height: 14px;
-//         }
-//     }
-
-//     #mobileserve-description {
-//         display: block;
-//     }
-//     #keeneland-description {
-//         display: block;
-//     }
-//     #uk-description {
-//         display: block;
-//     }
-//     #lfucg-description {
-//         display: block;
-//     }
-//     #bullard-description {
-//         display: block;
-//     }
-//     #pcusa-description {
-//         display: block;
-//     }
-// }
-// #mobileserve-description {
-//     display: none;
-// }
-// #keeneland-description {
-//     display: none;
-// }
-// #uk-description {
-//     display: none;
-// }
-// #lfucg-description {
-//     display: none;
-// }
-// #bullard-description {
-//     display: none;
-// }
-// #pcusa-description {
-//     display: none;
-// }
 
 .box-small {
 	width: 80px;
@@ -1002,7 +944,7 @@ html.loading body {
         margin-top: 10px !important;
     }
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min.jpg") no-repeat;
+		background: url("/assets/img/backgrounds/services-top-min_darker.jpg") no-repeat;
 		background-size: cover;
         border-bottom: 5px solid black;
         .carousel-frame {

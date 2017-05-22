@@ -21,6 +21,11 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+*:focus {
+outline: 0;
+outline: none;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
