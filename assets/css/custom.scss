@@ -864,7 +864,7 @@ html, body {
 html.loading {
     /* Replace #333 with the background-color of your choice */
     /* Replace loading.gif with the loading image of your choice */
-    background: #333 url('/assets/img/backgrounds/loader.gif') no-repeat 50% 50%;
+    background: #333 url('/assets/img/backgrounds/gif-load.gif') no-repeat 50% 50%;
 
     /* Ensures that the transition only runs in one direction */
     -webkit-transition: background-color 0;
@@ -947,7 +947,7 @@ html.loading body {
         margin-top: 10px !important;
     }
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min_darker.jpg") no-repeat;
+		background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
 		background-size: cover;
         border-bottom: 5px solid black;
         .carousel-frame {
@@ -1098,7 +1098,7 @@ html.loading body {
 
 @include portfolio_page {
     .top-container {
-        background: url("/assets/img/backgrounds/services-top-min_darker.jpg") no-repeat;
+        background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
         background-size: cover;
         border-bottom: 5px solid black;
         height: 15vh;
@@ -1167,7 +1167,7 @@ html.loading body {
 
 @include contact_page {
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min_darker.jpg") no-repeat;
+		background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
 		background-size: cover;
 		height: 15vh;
 		background-position: 0 100%;
@@ -1234,7 +1234,7 @@ html.loading body {
 @include about_page {
     color: white;
     .top-container {
-        background: url("/assets/img/backgrounds/services-top-min_darker.jpg") no-repeat;
+        background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
         background-size: cover;
         // height: 15vh;
 		background-position: 0 100%;
@@ -1299,7 +1299,7 @@ html.loading body {
 
 @include team_page {
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min_darker.jpg") no-repeat;
+		background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
 		background-size: cover;
 		height: 15vh;
 		background-position: 50% 100%;
