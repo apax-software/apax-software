@@ -46,6 +46,9 @@
   pic_name: jason
   title: Developer
 
+- full_name: Dave Mitchell
+  title: Developer
+
 - full_name: Zach Frey
   pic_name: zach
   title: Designer
@@ -75,4 +78,7 @@
   title: Director, Awesome Inc U
   email: nick
   email_ext: awesomeinc.org
+
+- full_name: Janine Hempy
+  title: Instructor, Awesome Inc U
 
