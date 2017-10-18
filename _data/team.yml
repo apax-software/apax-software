@@ -43,7 +43,10 @@
   title: Developer
 
 - full_name: Dave Mitchell
+  pic_name: davem
   title: Developer
+  email: dave
+  email_ext: apaxsoftware.com
 
 - full_name: Zach Frey
   pic_name: zach
@@ -83,12 +86,6 @@
   pic_name: davidv
   title: Developer
   email: david
-  email_ext: apaxsoftware.com
-
-- full_name: Dave Mitchell
-  pic_name: davem
-  title: Developer
-  email: dave
   email_ext: apaxsoftware.com
 
 - full_name: Josh Stewart
