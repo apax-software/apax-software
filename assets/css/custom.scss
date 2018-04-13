@@ -1247,6 +1247,23 @@ html.loading body {
 			// color: #525252;
 		}
 	}
+	iframe {
+		padding: 20px;
+		@include desktop {
+			width: 756px;
+			height: 425px;
+		}
+		@include phablet {
+			width: 700px;
+			height: 393px;
+			padding: 20px 0;
+		}
+		@include mobile {
+			width: 336px;
+			height: 240px;
+			padding: 40px 0;
+		}
+	}
 	.bot-container {
 		background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
 		background-size: cover;
