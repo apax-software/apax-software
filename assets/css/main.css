@@ -165,6 +165,19 @@ input[type="submit"] {
 	border: 0px;
 	margin-top: 1em;
 }
+
+.contact_form {
+	text-align: left;
+}
+
+.Contact-wrap ::-moz-placeholder {
+	text-align: left !important;
+}
+
+
+.contact_form .hs-button, .contact_form .hs-input {
+	color:black;
+}
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
