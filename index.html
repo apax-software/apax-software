@@ -29,7 +29,7 @@ redirect_from:
 				</h3>
 
 			  <div id="floating-action-btn-container">
-			  	<button type="button" class="btn floating-action-btn">
+			  	<button type="button" class="btn floating-action-btn" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Meet with us!">
 			  		<i class="fa fa-calendar" aria-hidden="true"></i>
 					</button>
 			  </div>
@@ -52,6 +52,10 @@ redirect_from:
       return false;
    });
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 	
 	

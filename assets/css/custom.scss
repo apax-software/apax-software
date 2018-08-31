@@ -1719,7 +1719,8 @@ div.teammate {
 	z-index: 1;
 
 	&:hover {
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+		background: #BC1B27;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 	}
 	&:active {
 		background: #BC1B27;
@@ -1732,6 +1733,14 @@ div.teammate {
 	i {
 		color: white;
 	}
+}
+
+.tooltip.top .tooltip-inner {
+    background-color: white;
+    color: black;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: white;
 }
 
 
