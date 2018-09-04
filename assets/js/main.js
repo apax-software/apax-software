@@ -25,6 +25,9 @@ $(document).ready(function() {
 		$('#bg-video').attr('autoplay', true);
 	}
 
+
+   document.getElementsByClassName("floating-action-btn").onclick = showPanel;
+   document.getElementsByClassName("panel-close").onclick = showPanel;
 	
 });
 
@@ -60,8 +63,19 @@ $('.carousel .item').each(function(){
       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
      
   }
-
- 
-
-
 });
+
+
+function showPanel() {
+	var displayState = document.querySelector("#hubspot-meetings-form").style.display;
+
+	if (displayState == 'none') {
+		document.querySelector("#hubspot-meetings-form").style.display = 'block';
+		document.querySelector(".panel-close").style.display = 'block';
+		document.querySelector(".fa-calendar").style.display = 'none';
+	} else {
+		document.querySelector("#hubspot-meetings-form").style.display = 'none';
+		document.querySelector(".panel-close").style.display = 'none';
+		document.querySelector(".fa-calendar").style.display = 'block';
+	}
+}
