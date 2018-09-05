@@ -123,7 +123,7 @@ $mobile_width: 450px;
 	}
 }
 
-/********************************** Aimations ****************************************/
+/********************************** Animations ****************************************/
 
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
@@ -1706,8 +1706,62 @@ div.teammate {
 	margin-top: 10px;
 }
 
-
 *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+}
+
+// Hubspot meetings form components
+
+.floating-action-btn {
+	background: #ED2D3F;
+	border-radius: 100%;
+	bottom: 0;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+	height: 56px;	
+	margin-bottom: 24px;
+	margin-right: 24px;
+	margin-top: 24px;
+	position: fixed;
+	right: 0;
+	width: 56px;
+	z-index: 1;
+
+	&:hover {
+		background: #BC1B27;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	}
+	&:active {
+		background: #BC1B27;
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	}
+	&:focus {
+		outline: 0 !important;
+	}
+
+	i {
+		color: white;
+		font-size: 22px;
+	}
+}
+
+.tooltip.top .tooltip-inner {
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: white;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+#hubspot-meetings-form {
+	bottom: 0;
+	margin-top: 50px;
+	overflow-y: scroll;
+	padding-top: 20px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 380px;
 }

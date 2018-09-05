@@ -8,17 +8,17 @@ redirect_from:
 ---
 
 
-    <div id="headerwrap">
-        <video id="bg-video" class="video" preload="none" autoplay="true" loop="loop" muted="true" >
-            <source src="assets/media/bg-.mp4" type="video/mp4" />
-            <source src="assets/media/bg.ogv" type="video/ogg" />
-            <source src="assets/media/bg.webm" type="video/webm" />
-        </video>
+  <div id="headerwrap">
+    <video id="bg-video" class="video" preload="none" autoplay="true" loop="loop" muted="true" >
+        <source src="assets/media/bg-.mp4" type="video/mp4" />
+        <!-- <source src="assets/media/bg.ogv" type="video/ogg" /> -->
+        <!-- <source src="assets/media/bg.webm" type="video/webm" /> -->
+    </video>
 
 		<div class="container" id="scene">
+
 				<h1 class="subtitle center fade-in-top-slow letter-spacing">Welcom<span style="letter-spacing: 0">e</span></h1>
 				<h2 class="center fade-in-bot-slow">High Quality Custom Software Solutions</h2>
-
 
 				<h3 class="center fade-in-bot-slow">
 					<a href="/services">
@@ -27,8 +27,20 @@ redirect_from:
 						<i class="fa fa-chevron-circle-right faa-bounce animated animated-delay" aria-label="Open Serivces Page"></i>
 					</a>
 				</h3>
-		</div><!-- /container -->
-    </div> <!-- /headerwrap -->
+
+		  	<button type="button" class="btn floating-action-btn" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Schedule a call" onclick="showPanel()">
+		  		<i class="fa fa-calendar" aria-hidden="true"></i>
+		  		<i class="fa fa-close panel-close" aria-hidden="true" style="display: none;"></i>
+				</button>
+
+				<div id="hubspot-meetings-form" class="fade-in" style="display: none;">
+			  	<div class="meetings-iframe-container" data-src="https://discover.apaxsoftware.com/meetings/amanda125?embed=true"></div>
+		  		<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+		  	</div>
+
+			</div><!-- /container -->
+
+  </div> <!-- /headerwrap -->
 
 	<!-- Wrap -->
 	<!-- </div>/ wrap -->
@@ -45,8 +57,11 @@ redirect_from:
       return false;
    });
 });
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 </script>
-	
 	
 	
 

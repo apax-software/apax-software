@@ -4,6 +4,6 @@ relative_permalinks: false
 sass:
   sass_dir: _scss
   # style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
