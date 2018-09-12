@@ -2,7 +2,7 @@
 ---
 //colors
 $color_alto_approx: rgb(222, 222, 222);
-$color_cardinal_approx: #c31337;
+$color_cardinal_approx: #ed2c3f;  // was #c31337
 $color_pumice_approx: rgb(200, 200, 200);
 $color_shady_lady_approx: rgb(165, 165, 165);
 $color_pippin_approx: rgb(255,222,223);
@@ -947,16 +947,16 @@ html.loading body {
         margin-top: 10px !important;
     }
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-		background-size: cover;
-        border-bottom: 5px solid black;
-        .carousel-frame {
-            min-height: 0;
-        }
+		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
+		background-image: linear-gradient(#666, #000);
+		border-bottom: 5px solid black;
+		.carousel-frame {
+			min-height: 0;
+		}
 		h3 {
-            @include mobile {
-                font-size: 150%;
-            }
+			@include mobile {
+				font-size: 150%;
+			}
 			margin-top: 0vh;
 			&:first-child {
 				@include mobile {
@@ -984,9 +984,8 @@ html.loading body {
 		}
 	}
 	.bot-container {
-		background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
-        border-bottom: 5px solid black;
-		background-size: cover;
+		// background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
+		background-color: #000;
 		padding-bottom: 20px;
         h3 {
             margin-top: 20px;
@@ -1097,62 +1096,56 @@ html.loading body {
 
 
 @include portfolio_page {
-    .top-container {
-        background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-        background-size: cover;
-        border-bottom: 5px solid black;
-        height: 15vh;
-        background-position: 50% 100%;
-        h1 {
-            @include font-size(4);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 14px;
-            // color: #525252;
-            color: white;
-        }
-    }
-	background: url("/assets/img/backgrounds/portfolio-min.jpg") no-repeat fixed 100% 100%;
-	background-size: cover;
-	min-height: 100vh;
+	.top-container {
+		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
+	}
+	h1 {
+		@include font-size(4);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 14px;
+		color: white;
+	}
+	// background: url("/assets/img/backgrounds/portfolio-min.jpg") no-repeat fixed 100% 100%;
+	background-image: linear-gradient(#666, #000 20%);
 
-    color: white;
-    a {
-        color: white;
-    }
-    p {
-        margin-top: 10px;
-        text-align: left;
-        font-size: 120%;
-        font-weight: 400;
-    }
+	color: white;
+	a {
+		color: white;
+	}
+	p {
+		margin-top: 10px;
+		text-align: left;
+		font-size: 120%;
+		font-weight: 400;
+	}
 
-    .box {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        img {
-            margin: 0;
-            padding: 0;
-            margin-top: 20px;
-        }
-        #uk_img {
-            margin-top: 40px;
-        }
-        #keeneland_img {
-            margin-top: 40px;
-        }
-        #mobileserve_img {
-            margin-top: 80px;
-        }
-        #bullard_img {
-            margin-top: 80px;
-        }
-    }
+	.box {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		img {
+			margin: 0;
+			padding: 0;
+			margin-top: 20px;
+		}
+		#uk_img {
+			margin-top: 40px;
+		}
+		#keeneland_img {
+			margin-top: 40px;
+		}
+		#mobileserve_img {
+			margin-top: 80px;
+		}
+		#bullard_img {
+			margin-top: 80px;
+		}
+	}
 
-    h3 {
-        @include mobile {
-            font-size: 150%;
-        }
+	h3 {
+		@include mobile {
+			font-size: 150%;
+		}
     }
     @include mobile {
          padding-bottom: 20px;
@@ -1167,29 +1160,19 @@ html.loading body {
 
 @include contact_page {
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-		background-size: cover;
-		height: 15vh;
-		background-position: 0 100%;
-        border-bottom: 5px solid black;
-		h1 {
-			@include font-size(4);
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 14px;
-			// color: #525252;
-            color: white;
-		}
+		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
 	}
-	.bot-container {
-		background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
-		background-size: cover;
-		// height: 100vh;
-		padding: 3vh 0;
-		background-color: #eee;
-		background-blend-mode: multiply;
-        color: white;
+
+	background-image: linear-gradient(#666, #000);
+	h1 {
+		@include font-size(4);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 14px;
+		color: white;
 	}
+	color: white;
+	// background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
 	.contact-page {
 		background-image: url("/assets/img/headers/Typing.png");
 	}
@@ -1232,19 +1215,15 @@ html.loading body {
 }
 
 @include about_page {
-    color: white;
-    .top-container {
-        background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-        background-size: cover;
-        // height: 15vh;
-		background-position: 0 100%;
-        border-bottom: 5px solid black;
+	color: white;
+	.top-container {
+		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
+		background-image: linear-gradient(#666, #000);
 		h1 {
 			@include font-size(4);
 			font-weight: 700;
-			text-transform: uppercase;
+			text-transform: uppercase;  
 			letter-spacing: 14px;
-			// color: #525252;
 		}
 	}
 	iframe {
@@ -1265,26 +1244,21 @@ html.loading body {
 		}
 	}
 	.bot-container {
-		background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
-		background-size: cover;
-		// min-height: 115vh;
-		padding-top: 3vh;
-		background-color: #eee;
+		background-color: #000;
 		background-blend-mode: multiply;
-		/*background-position: 0 80%;*/
 	}
-    h2 {
-        color: white;
-    }
-    img {
-        width: 70%;
-        margin-bottom: 10px;
-        margin-left: 15%;
-        @include mobile {
-            width: 100%;
-        margin-left: 0;
-        }
-    }
+	h2 {
+		color: white;
+	}
+	img {
+		width: 70%;
+		padding: 10px 0;
+		margin-bottom: 10px;
+		@include mobile {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
 	p, ul {
 		// text-align: justify;
 		// color: $black;
@@ -1316,34 +1290,23 @@ html.loading body {
 
 @include team_page {
 	.top-container {
-		background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-		background-size: cover;
-		height: 15vh;
-		background-position: 50% 100%;
-        border-bottom: 5px solid black;
-		h1 {
-			@include font-size(4);
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 14px;
-			// color: #525252
-            color: white;
-		}
+		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
+		// background-size: cover;
+		// height: 15vh;
+		// background-position: 50% 100%;
+		// border-bottom: 5px solid black;
 	}
 	.bot-container {
-		background: url("/assets/img/backgrounds/test-bot_light_short2.jpg") no-repeat;
-		background-size: cover;
-		min-height: 150vh;
-		padding-top: 8vh;
-		background-position: 33% 100%;
-		background-color: #ffffff;
-		background-blend-mode: multiply;
 		h1 {
+			padding: 20px 0;
 			@include font-size(4);
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 14px;
+			color: white;
 		}
+		// background: url("/assets/img/backgrounds/test-bot_light_short2.jpg") no-repeat;
+		background-image: linear-gradient(#666, #000 20%);
 	}
 	.header {
 		background-color: $color_background_grey;
