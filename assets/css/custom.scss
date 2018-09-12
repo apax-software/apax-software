@@ -785,6 +785,8 @@ h3 {
 	// background: url('../img/backgrounds/video-pic-min.jpg') no-repeat;
 	// background-size: 100% 100%;
 	transition: 1s opacity;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #headerwrap {
@@ -1291,10 +1293,6 @@ html.loading body {
 @include team_page {
 	.top-container {
 		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-		// background-size: cover;
-		// height: 15vh;
-		// background-position: 50% 100%;
-		// border-bottom: 5px solid black;
 	}
 	.bot-container {
 		h1 {
