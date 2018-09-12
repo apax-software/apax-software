@@ -46,11 +46,7 @@ $(document).ready(function () {
 		frame: '../assets/img/carousel/mac_screen.png',
 
 		frameSize: [{
-			// width: 10,
-			// width: 487
-			width: 200
-			// minScreenWidth: 200,
-			// maxScreenWidth: 400
+			width: 400
 		}],
 
 		collapseThreshold: 450,

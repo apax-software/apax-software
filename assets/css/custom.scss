@@ -935,10 +935,17 @@ html.loading body {
 
 
 @include services_page {
+	.top-container {
+		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
+		background-image: linear-gradient(#666, #000 30%);
     color: white;
     a {
         color: white;
-    }
+		}
+		li {
+			font-size: 2em;
+			color: #fff;
+		}
     p {
         margin-top: 10px;
         text-align: left;
@@ -946,15 +953,18 @@ html.loading body {
         font-weight: 400;
     }
     .computer {
-        margin-top: 10px !important;
-    }
-	.top-container {
-		// background: url("/assets/img/backgrounds/services-top-min_darker2.jpg") no-repeat;
-		background-image: linear-gradient(#666, #000);
-		border-bottom: 5px solid black;
-		.carousel-frame {
-			min-height: 0;
+				margin-top: 20px !important;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
 		}
+		.fc {
+			margin: 0 !important;
+		}
+		// border-bottom: 5px solid black;
+		// .carousel-frame {
+		// 	min-height: 0;
+		// }
 		h3 {
 			@include mobile {
 				font-size: 150%;
@@ -985,87 +995,87 @@ html.loading body {
 			}
 		}
 	}
-	.bot-container {
-		// background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
-		background-color: #000;
-		padding-bottom: 20px;
-        h3 {
-            margin-top: 20px;
-            @include mobile {
-                font-size: 150%;
-            }
-        }
-		@include mobile {
-			 padding-bottom: 20px;
-		}
-		@include tablet {
-			 padding-bottom: 20px;
-		}
-		@include phablet {
-			 padding-bottom: 20px;
-		}
-		.row {
-			margin: 0;	
-		}
-		h3 {
-			@include mobile {
-				margin-top: 0;
-			}
-		}
-		img {
-			width: 40%;
-            padding-top: 30px;
-			@include mobile {
-                padding-top: 0px;
-				width: 60%;
-				margin: 10% 0;
-			}
-		}
-	}
-	.secondary-services {
-		margin-top: 5vh;
-	}
-	h3 {
-		@include font-size(2);
-	}
-	.carousel-frame {
-		min-height: 400px;
-		.fc {
-			margin: 0 60px;
-			@include tablet {
-				margin: 0 0px;
-			}
-			@include phablet {
-				margin: 0 30%;
-			}
-			@include mobile {
-				margin: 0 11%;
-			}
-		}
-		.fc-image-masked {
-			background-size: 100% 100%;
-		}
-	}
-	.frame-icon {
-		min-height: 300px;
-	}
-	.services-page {
-		background-image: url("/assets/img_2/mountains.jpg");
-		background-position: 0 -100px;
-		@include mobile {
-			background-position: 0 20px;
-		}
-	}
-	@include mobile {
-		img {
-			margin-left: 25%;
-			width: 50%;
-			margin-top: 0;
-		}
-		h2 {
-			font-size: 20px;
-		}
-	}
+	// .bot-container {
+	// 	// background: url("/assets/img/backgrounds/services-bot-min.jpg") no-repeat;
+	// 	background-color: #000;
+	// 	padding-bottom: 20px;
+  //       h3 {
+  //           margin-top: 20px;
+  //           @include mobile {
+  //               font-size: 150%;
+  //           }
+  //       }
+	// 	@include mobile {
+	// 		 padding-bottom: 20px;
+	// 	}
+	// 	@include tablet {
+	// 		 padding-bottom: 20px;
+	// 	}
+	// 	@include phablet {
+	// 		 padding-bottom: 20px;
+	// 	}
+	// 	.row {
+	// 		margin: 0;	
+	// 	}
+	// 	h3 {
+	// 		@include mobile {
+	// 			margin-top: 0;
+	// 		}
+	// 	}
+	// 	img {
+	// 		width: 40%;
+  //           padding-top: 30px;
+	// 		@include mobile {
+  //               padding-top: 0px;
+	// 			width: 60%;
+	// 			margin: 10% 0;
+	// 		}
+	// 	}
+	// }
+	// .secondary-services {
+	// 	margin-top: 5vh;
+	// }
+	// h3 {
+	// 	@include font-size(2);
+	// }
+	// .carousel-frame {
+	// 	min-height: 400px;
+	// 	.fc {
+	// 		margin: 0 60px;
+	// 		@include tablet {
+	// 			margin: 0 0px;
+	// 		}
+	// 		@include phablet {
+	// 			margin: 0 30%;
+	// 		}
+	// 		@include mobile {
+	// 			margin: 0 11%;
+	// 		}
+	// 	}
+	// 	.fc-image-masked {
+	// 		background-size: 100% 100%;
+	// 	}
+	// }
+	// .frame-icon {
+	// 	min-height: 300px;
+	// }
+	// .services-page {
+	// 	background-image: url("/assets/img_2/mountains.jpg");
+	// 	background-position: 0 -100px;
+	// 	@include mobile {
+	// 		background-position: 0 20px;
+	// 	}
+	// }
+	// @include mobile {
+	// 	img {
+	// 		margin-left: 25%;
+	// 		width: 50%;
+	// 		margin-top: 0;
+	// 	}
+	// 	h2 {
+	// 		font-size: 20px;
+	// 	}
+	// }
 }
 @include phablet {
 	.desktop-only {
