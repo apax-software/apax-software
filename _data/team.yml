@@ -50,7 +50,7 @@
 
 - full_name: Melanie Stoeckle
   pic_name: melanie
-  title: Developer
+  title: Designer
   email: melanie
   email_ext: apaxsoftware.com
 
@@ -80,7 +80,7 @@
 
 - full_name: Amanda Murray
   pic_name: amanda
-  title: Director, Marketing
+  title: Director, Accounts
   email: amanda
   email_ext: awesomeinc.org
 
@@ -110,10 +110,4 @@
   pic_name: joshs
   title: Developer
   email: josh
-  email_ext: apaxsoftware.com
-
-- full_name: Jon Adelson
-  pic_name: jona
-  title: Developer
-  email: jon
   email_ext: apaxsoftware.com
