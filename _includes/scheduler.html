@@ -1,0 +1,37 @@
+<h1>HERE</h1>
+<button 
+  type="button" 
+  class="btn floating-action-btn" 
+  data-toggle="tooltip" 
+  data-placement="top" 
+  data-trigger="hover"
+  title="Schedule a call" 
+  onclick="showPanel()"
+>
+  <i class="fa fa-calendar" aria-hidden="true"></i>
+  <i class="fa fa-close panel-close" aria-hidden="true" style="display: none;"></i>
+</button>
+
+<div id="hubspot-meetings-form" class="fade-in" style="display: none;">
+  <div class="meetings-iframe-container" data-src="https://discover.apaxsoftware.com/meetings/amanda125?embed=true"></div>
+  <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+</div>
+
+
+
+<script>
+  $(document).ready(function () {
+    var $form = $('form');
+    $form.submit(function () {
+      $.post($(this).attr('action'), $(this).serialize(), function (response) {
+        $('.form-btn').toggle()
+        $('.form-complete').toggle()
+      }, 'json');
+      return false;
+    });
+  });
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>

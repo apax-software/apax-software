@@ -67,6 +67,8 @@ $('.carousel .item').each(function(){
 
 
 function showPanel() {
+	window.scroll(0,0);
+
 	var displayState = document.querySelector("#hubspot-meetings-form").style.display;
 
 	if (displayState == 'none') {
