@@ -8,7 +8,7 @@ $(document).ready(function () {
 		frameSize: [{
 			// width: 10,
 			// width: 250
-			width: 107
+			width: 131
 			// minScreenWidth: 200,
 			// maxScreenWidth: 400
 		}],
