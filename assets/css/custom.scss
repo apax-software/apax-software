@@ -1322,7 +1322,7 @@ body {
 	@extend %extend_1;
 }
 #wrap {
-	min-height: 50%;
+	min-height: calc(100vh - 60px);
 }
 #main {
 	overflow: auto;
